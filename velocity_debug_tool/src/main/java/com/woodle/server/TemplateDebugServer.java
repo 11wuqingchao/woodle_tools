@@ -29,7 +29,17 @@ public class TemplateDebugServer {
         ServerBootstrap serverBootstrap = new ServerBootstrap(
                 new NioServerSocketChannelFactory(Executors.newCachedThreadPool(), Executors.newCachedThreadPool()));
         serverBootstrap.setPipelineFactory(new ServerPipelineFactory());
-        serverBootstrap.bind(new InetSocketAddress(port));
+
+        for (;;) {
+            try {
+                ++port;
+                serverBootstrap.bind(new InetSocketAddress(port));
+                break;
+            } catch (Exception e) {
+                System.out.println("listen port fail, error message is: "+e.getMessage());
+            }
+        }
+
         System.out.println("admin server start!!! listening port: "+port);
     }
 
@@ -39,7 +49,7 @@ public class TemplateDebugServer {
             ChannelPipeline pipeline = Channels.pipeline();
             pipeline.addLast("decoder", new HttpRequestDecoder());
             pipeline.addLast("encoder", new HttpResponseEncoder());
-            //http处理handler
+            // http处理handler
             pipeline.addLast("handler", new TemplateDebugServerHandler());
             return pipeline;
         }

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tools>
+    <data type="number" key="TOOLS_VERSION" value="2.0"/>
+    <data type="boolean" key="GENERIC_TOOLS_AVAILABLE" value="true"/>
+    <toolbox scope="request">
+        <tool key="loopTool" class="org.apache.velocity.tools.generic.LoopTool"/>
+        <tool key="contextTool" class="org.apache.velocity.tools.generic.ContextTool"/>
+        <tool key="linkTool" class="org.apache.velocity.tools.generic.LinkTool"/>
+        <tool key="renderTool" class="org.apache.velocity.tools.generic.RenderTool"/>
+        <tool key="alternatorTool" class="org.apache.velocity.tools.generic.AlternatorTool"/>
+        <tool key="displayTool" class="org.apache.velocity.tools.generic.DisplayTool"/>
+        <tool key="mathTool" class="org.apache.velocity.tools.generic.MathTool"/>
+        <tool key="numberTool" class="org.apache.velocity.tools.generic.NumberTool"/>
+        <tool key="comparisonDateTool" class="org.apache.velocity.tools.generic.ComparisonDateTool"/>
+        <tool key="classTool" class="org.apache.velocity.tools.generic.ClassTool"/>
+        <tool key="conversionTool" class="org.apache.velocity.tools.generic.ConversionTool"/>
+        <tool key="escapeTool" class="org.apache.velocity.tools.generic.EscapeTool"/>
+        <tool key="fieldTool" class="org.apache.velocity.tools.generic.FieldTool"/>
+        <tool key="listTool" class="org.apache.velocity.tools.generic.ListTool"/>
+        <tool key="resourceTool" class="org.apache.velocity.tools.generic.ResourceTool"/>
+        <tool key="sortTool" class="org.apache.velocity.tools.generic.SortTool"/>
+    </toolbox>
+</tools>

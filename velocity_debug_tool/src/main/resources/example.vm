@@ -1,0 +1,588 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>确认并支付-国内机票-去哪儿网Qunar.com</title>
+<style type="text/css">
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video { margin:0; padding:0; border:0; font-size:100%; font:inherit; vertical-align:baseline; }
+body { font:normal 12px/1.5 tahoma, arial, simsun, sans-serif; background:#fff; color:#555; -webkit-font-smoothing:antialiased; -webkit-text-size-adjust:100%; }
+h1, h2, h3, h4, h5, h6 { font-size:100%; }
+address, cite, dfn, em, var { font-style:normal; }
+code, kbd, pre, samp { font-family:"courier new", courier, monospace; }
+small { font-size:12px; }
+ul, ol { list-style:none; }
+a { text-decoration:none; color:#0069ca; }
+a:hover { text-decoration:none; color:#f60; }
+sup { vertical-align:text-top; }
+sub { vertical-align:text-bottom; }
+legend { color:#000; }
+fieldset, img { border:0; }
+button, input, select, textarea { font-size:100%; }
+table { border-collapse:collapse; border-spacing:0; }
+table td, table th { vertical-align:middle; font-weight:normal; }
+select { vertical-align:middle; }
+button { margin:0px; padding:0px; }
+.fix { *zoom:1;}
+.fix:after { clear:both; display:block; height:0; visibility:hidden; content:"\20"; }
+.hide { display:none !important; }
+    /**  未登录导航**/
+.pubnav, .pubnav .nav_inner .servise_phone, .pubnav .nav_inner .login_info li { background:url(http://source.qunar.com/tts/images/demo/topnav_v3.png) no-repeat 0px 0px; color:#333; }
+.pubnav { width:auto; min-width:950px; background-position:0px 0px; background-repeat:repeat-x; padding-top:5px; }
+.pubnav .nav_inner { width:950px; margin:0 auto; height:28px; position:relative; overflow:hidden; }
+.pubnav .nav_inner .servise_phone { background-position:0px -48px; padding:0px 10px 0px 40px; margin:0px 0px 0px 5px; height:23px; line-height:21px; float:left; display:block; }
+.pubnav .nav_inner .servise_phone em { font-family:Arial, Helvetica, sans-serif; }
+.pubnav .nav_inner .login_info { float:right; display:block; padding-top:2px; margin-right:-1px; position:relative; z-index:60; }
+.pubnav .nav_inner .login_info li { float:left; padding:0px 10px; background-position:right -79px; line-height:18px; line-height:21px \9; _line-height:18px; }
+.pubnav .nav_inner .login_info li a { color:#333; }
+.pubnav .nav_inner .login_info li a:hover { color:#f60; }
+.pubnav .nav_inner .m_online_ser { float:right; display:block; position:relative; z-index:70; }
+.pubnav .btn_online_ser, .pubnav .btn_online_ser_disable { background:url(http://source.qunar.com/tts/images/btn_online_ser.png) no-repeat scroll 0 0; width:90px; height:22px; display:inline-block; zoom:1; overflow:hidden; text-indent:-9999px; *font:0;
+    *line-height:0;
+    *text-indent:0;
+}
+.pubnav .btn_online_ser_disable { background-position:0 -25px; cursor:default; }
+    /**代码商banner **/
+.b_agentbanner { height:88px; color:#333; }
+.e_agentbanner { margin:0 auto; width:950px; background:url(http://source.qunar.com/tts/images/demo/blue_line.jpg) repeat-x left bottom; padding-bottom:3px; }
+.e_agentbanner .banner { height:85px; }
+.e_agentbanner .banner .logo { float:left; display:inline; height:85px; vertical-align:middle; margin:0px 10px 0px 5px; overflow:hidden; max-width:200px; _width:200px; }
+.e_agentbanner .banner .logo b { display:inline-block; vertical-align: middle; overflow:hidden; width:0px; height:100%; height:85px \0; }
+.e_agentbanner .banner .logo img { max-height:80px; vertical-align:middle; cursor:pointer; margin-top:-1px; }
+.e_agentbanner .banner .m_fl_piao { float:left; display:block; display:table; width:250px; height:85px; *padding-top:25px;
+    *height:60px;
+}
+.e_agentbanner .banner .m_fl_piao div { display:table-cell; vertical-align:middle; }
+.e_agentbanner .banner .m_fl_piao div label { float:left; display:block; width:60px; }
+.e_agentbanner .banner .m_fl_piao div span { margin-left:60px; display:block; word-wrap:break-word; word-break:break-all; zoom:1; }
+.e_agentbanner .banner .m_fr_rbz { float:right; display:block; padding-top:10px; }
+.e_agentbanner .banner .m_fr_rbz .e_acc_hp { float:left; display:block; margin-left:5px; }
+    /**协航认证出票认证**/
+.b_acc_hp { }
+.b_acc_hp .f_tohama { font-family:Tahoma, Arial; }
+.e_acc_hp { margin:0 auto; width:230px; height:65px; font:normal 12px/20px Arial; text-align:center; background:url(http://source.qunar.com/site/images/flight/flight_search/bg_acc.png) 0 8px no-repeat; margin-bottom:5px; }
+.e_acc_hp .i_cata { margin:0 3px 0 2px; vertical-align:middle; background:url(http://source.qunar.com/site/images/flight/flight_search/bg_acc.png) -200px -70px no-repeat; width:18px; height:15px; display:inline-block; _vertical-align:baseline }
+.e_acc_hp .m_tit { background:url(http://source.qunar.com/site/images/flight/flight_search/bg_acc.png) 100px 100px no-repeat; width:145px; height:24px; display:block; margin:0 auto; }
+.e_acc_hp .m_t1 { background-position:0 -70px; }
+.e_acc_hp .m_t2 { background-position:0 -100px; }
+.e_acc_hp .m_p1, .e_acc_hp .m_p2 { color:#d5920f; line-height:18px; }
+.p_tips_cont { position: relative; z-index: 20; width:100%; height:0; }
+.p_tips_wrap { position: absolute; text-align: left; border: 1px solid #f9d7ac; background-color: #ffffeb; color: #555; width:228px; z-index: 100; left:0; top:3px; }
+.p_tips_wrap .p_tips_content { line-height: 22px; word-break: break-all; word-wrap: break-word; white-space: nowrap; padding:5px 18px; }
+.p_tips_wrap .p_tips_arr { position:absolute; *display:inline;
+    margin:-10px 0 0 108px; margin:-17px 0 108/9; width:22px; height:10px; cursor:default; }
+.p_tips_wrap .p_tips_arr p { font-family:"SimSun"; overflow:hidden; font-size:12px; display:block; height:12px; color:#f9d7ac; }
+.p_tips_wrap .p_tips_arr .arr_i { margin:-11px 0 0; color:#ffffeb; }
+.e_dbt_hp .i_bao { margin:-2px 3px 0 2px; vertical-align:middle; background:url(http://source.qunar.com/site/images/flight/flight_search/bg_acc.png) -200px -93px no-repeat; width:30px; height:36px; display:inline-block; }
+.e_dbt_hp .m_dbt_ico { float:left; display:block; width:35px; margin-top:4px; }
+.e_dbt_hp .m_dbt_ifo { margin-left:35px; line-height:20px; }
+#js_hp_ticket #js_hp_tips { display:none; }
+#js_hp_ticket:hover #js_hp_tips { display:block; }
+    /**\协航认证出票认证**/
+    /** footer **/
+.footer{width:950px;margin:0px auto;line-height:20px;color:#888;border-top:#ddd 1px solid;padding:15px 0px;text-align:center;}
+.footer .t1{display:inline-block;margin:0px 5px;}
+    /** 订单**/
+.flywp{position:relative;zoom:1;}
+.flywp .fix { *zoom:1;}
+.flywp .fix:after { clear:both; display:block; height:0; visibility:hidden; content:"\20"; }
+.flywp .payorder_info { width:950px; margin:0px auto 10px auto; }
+.flywp .proces_step { width:950px; margin:0 auto; position:relative; padding:20px 0px; height:20px; }
+.flywp .proces_step .p_title { font:700 16px/20px simsun, sans-serif; padding-left: 10px; }
+.flywp .proces_step ul { position:absolute; top:17px; right:-5px; }
+.flywp .proces_step ul li { float:left; height:30px; width:83px; color:#808080; text-align:center; line-height:18px; }
+.flywp .proces_step ul li em { display:block; margin-right:5px; height:8px; line-height:0; font-size:0; background:#e4e4e4; margin-top:4px; }
+.flywp .proces_step s { _position:relative; float:right; display:inline; margin-right:-5px; height:8px; width:5px; overflow:hidden; background:url(http://source.qunar.com/tts/images/demo/topnav_v3.png) no-repeat -10px -104px; }
+.flywp .proces_step .visited { background-color:#c9f3f5; }/*已经访问的步骤*/
+.flywp .proces_step .visited s { background-position:-207px -104px; }
+.flywp .proces_step .prenode s { background-position:-217px -104px; }/*当前步骤的前一步*/
+.flywp .proces_step .prenode { background-color:#c9f3f5; }
+.flywp .proces_step .current s { background-position:-239px -104px; }
+.flywp .proces_step .current { background-color:#37c1c8; }
+.flywp .proces_step .nexnode { }/*当前步骤的下一步*/
+.flywp .proces_step .nexnode s { background-position:-228px -104px; }
+.flywp .title_main { border-left:#1ebad1 2px solid; background:#dcf7fb; font:700 14px/30px simsun, sans-serif; padding:0px 0px 0px 15px; position:relative; height:30px; }
+.flywp .title_main em { font-weight:100; font-size:12px; color:#888888; display:inline-block; margin-left:10px; }
+    /**提示层**/
+.flywp .moduletip_wt { width:950px; margin:0 auto 15px auto; }
+.flywp .module_tipbg { background:#ffffeb; border:#fbd5a7 1px solid; }
+.flywp .module_tipbg .wrinner { padding:4px 10px 6px 13px; }
+.flywp .module_tipbg .wrinner .waring_text { line-height:24px; padding:0px 0px 0px 22px; background:url(http://source.qunar.com/tts/images/demo/topnav_v3.png) no-repeat 0px -119px; vertical-align:middle; }
+.flywp .module_tipbg .wrinner .waring_text strong { font-weight:700; font-family:Tahoma; }
+.flywp .module_tipbg .sptips { line-height:24px; padding:0px 0px 0px 22px; background:url(http://source.qunar.com/tts/images/demo/topnav_v3.png) no-repeat 0px -118px; width:528px; margin:0 auto; }
+.flywp .order_baseinfo,
+.flywp .orderdetail_info .order_baseinfo { margin:15px 15px 0px 15px; padding:8px 15px; line-height:22px; }
+.flywp .orderdetail_info .order_baseinfo { margin:0px 0px 0px 0px; }
+.flywp .order_baseinfo ul,
+.flywp .orderdetail_info .order_baseinfo ul { zoom:1; }
+.flywp .order_baseinfo li,
+.flywp .orderdetail_info .order_baseinfo li { float:left; margin-right:10px; display:inline; }
+.flywp .order_baseinfo ul:after,
+.flywp .orderdetail_info .order_baseinfo ul:after { clear:both; display:block; height:0; visibility:hidden; content:"\20"; }
+.flywp .order_baseinfo .if1,
+.flywp .orderdetail_info .order_baseinfo .if1 { width:230px; }
+.flywp .order_baseinfo .if2,
+.flywp .orderdetail_info .order_baseinfo .if2 { width:208px; }
+.flywp .order_baseinfo .if3,
+.flywp .orderdetail_info .order_baseinfo .if3 { width:420px; }
+.flywp .order_baseinfo .if4,
+.flywp .orderdetail_info .order_baseinfo .if4 { width:285px; margin-right:0px; text-align:right; }
+.flywp .order_baseinfo .if5,
+.flywp .orderdetail_info .order_baseinfo .if5 { width:168px; line-height:23px; }
+.flywp .order_baseinfo .if6,
+.flywp .orderdetail_info .order_baseinfo .if6 { width:430px; line-height:23px; }
+.flywp .orderdetail_info .order_baseinfo .if7 { float:right; margin-right: 0px; }
+.flywp .order_baseinfo li a,
+.flywp .orderdetail_info .order_baseinfo li a { font-family:Arial, Helvetica, sans-serif; }
+.flywp .order_baseinfo .if2 b,
+.flywp .order_baseinfo .if6 b,
+.flywp .orderdetail_info .order_baseinfo .if2 b,
+.flywp .orderdetail_info .order_baseinfo .if6 b { font-weight:700; }
+.flywp .order_baseinfo .if3 .pr,
+.flywp .order_baseinfo .if5 .pr,
+.flywp .orderdetail_info .order_baseinfo .if3 .pr,
+.flywp .orderdetail_info .order_baseinfo .if5 .pr { font-family:Arial, Helvetica, sans-serif; color:#ff075b; font-weight:700; }
+.flywp .order_baseinfo .if3 .pr strong,
+.flywp .order_baseinfo .if5 .pr strong,
+.flywp .order_baseinfo .order_baseinfo .if3 .pr strong,
+.flywp .order_baseinfo .order_baseinfo .if5 .pr strong { font-size:16px; }
+.flywp .order_baseinfo .if4 .clred,
+.flywp .orderdetail_info .order_baseinfo .if4 .clred { color:#ff6600; }
+.flywp .payorder_info .waring_text,
+.flywp .orderdetail_info .waring_text { padding:0px 0px 0px 22px; background:url(http://source.qunar.com/tts/images/demo/topnav_v3.png) no-repeat 0px -120px; }
+.flywp .payorder_info .waring_text .waring_line { display:block; background-color:#FFFFEB; }
+.flywp .payorder_info .waring_text .f_ord_no { color: #FE0053; }
+.flywp .orderdetail_info .order_baseinfo .comp_text cite { font-family:Arial, Helvetica, sans-serif; }
+.flywp .orderdetail_info .order_baseinfo .comp_text .complaints { float:right; }
+.flywp .m_warn_refund { padding:10px 0px 15px 250px; position: relative; }
+.flywp .m_warn_refund .highlight { color:#FF075B; font:normal 18px/20px Tahoma; margin-right: 5px; }
+.flywp .m_warn_refund .rmb { font:normal 12px/20px Microsoft Yahei, Arial; }
+.flywp .m_warn_refund .f_tle_prc { padding-top:5px; line-height:20px; }
+.flywp .m_warn_refund .f_ord_sta { height:20px; padding-top:5px; line-height:20px; }
+.flywp .m_warn_refund .f_ord_no { color:#FE0053; }
+.flywp .m_warn_refund .f_ord_sta strong { font-weight: 700; }
+.flywp .m_warn_refund .f_ord_sta .sep2_1,
+.flywp .m_warn_refund .f_ord_sta .sep2_2 { float:left; display:block; width:245px; }
+.flywp .m_warn_refund .f_sbm_btn { padding:5px 20px 0 0px; zoom:1; position:relative; }
+.flywp .m_warn_refund .f_sbm_btn .btn_large { margin: 0 5px; }
+.flywp .m_warn_refund .lnk_rt { float:right; margin-top:8px; }
+.flywp .m_warn_refund .lnk_smt { width:460px; text-align:center; }
+.flywp .m_warn_refund .txt_sbm { line-height:30px; padding-top: 5px; line-height:20px; margin-bottom: -5px; width:690px; }
+    /**提示层**/
+
+    /**航班信息**/
+.flywp .payfl_info { border-bottom:#ddd 1px solid; padding:10px 15px 6px 15px; }
+.flywp .payfl_info h2 { font-weight:700; font-size:12px; line-height:20px; }
+.flywp .tbl_ft { table-layout:fixed; width:100%; line-height:24px; }
+.flywp .tbl_ft td { text-align:left; word-wrap: break-word; word-break:break-all; padding:6px 0px; vertical-align:middle; }
+.flywp .tbl_ft .ft1 { width:133px; }
+.flywp .tbl_ft .ft2 { width:236px; }
+.flywp .tbl_ft .ft3 { width:100px; text-align:center; }
+.flywp .tbl_ft .ft4 { width:158px; }
+.flywp .tbl_ft .ft5 { width:202px; }
+.flywp .tbl_ft td.ft1 { padding-left:15px; width:118px; }
+.flywp .flfive_info .tbl_ft td.ft1 { padding-left:30px; width:118px; }
+.flywp .tbl_ft td p { padding-right:5px; }
+.flywp .tbl_ft .ft2 .start { font-weight:700; }
+.flywp .tbl_ft .ft2 .end { font-weight:700; color:#888; }
+.flywp .tbl_ft .ft2 em { font-family:Tahoma, Geneva, sans-serif; display:inline-block; margin-right:10px; }
+.flywp .tbl_ft .ft4 img { vertical-align:middle; margin-right:5px; }
+.flywp .tbl_ft .ft4 .ft_code { margin-left:21px; font-family:Tahoma, Geneva, sans-serif; }
+.flywp .tbl_ft .ft4 .ft_code cite { color:#888; font-family:simsum; }
+.flywp .tbl_ft .p_lacal_jt { color:#FF075B; white-space:nowrap; }
+    /**退改签信息**/
+
+.flywp .b_tbl_mn { padding:0 10px 10px; }
+.flywp .b_tbl_mn .icon_exp,
+.flywp .b_tbl_mn .col { background:url(http://source.qunar.com/tts/images/demo/topnav_v3.png) no-repeat 20px 20px; display:inline-block; margin-left:7px; width:11px; height:10px; *height:12px;
+    overflow:hidden; }
+.flywp .b_tbl_mn .icon_exp { background-position: 100% -186px; }
+.flywp .b_tbl_mn .col { background-position:100% -206px; }
+.flywp .b_tbl_mn .f_tohama { font-family:Tahoma; }
+.flywp .b_tbl_mn .f_song { font-family:SimSun; }
+.flywp .b_tbl_mn .rmb { font-family: Arial; font-style:normal; }
+.flywp .e_mn_lnk { height:20px; line-height:20px; padding:3px 0 3px 26px; z-index: 10; position: relative; width: 130px; }
+.flywp .b_mn_tbl { margin-top: -25px; _margin-top:-28px }
+.flywp .tab_mn { border:1px solid #bbe9f0; width:100%; margin:0 auto 10px; word-break: break-all; word-wrap: break-word; }
+.flywp .tab_mn th { height:24px; line-height:24px; background:#f4fbfc; text-align:center; border-bottom:1px solid #bbe9f0; }
+.flywp .tab_mn td { line-height:23px; border-bottom:1px solid #bbe9f0; text-align:center; vertical-align: middle;}
+.flywp .tab_mn .c1 a { padding:0 21px; }
+.flywp .tab_mn .c1 { width:120px; text-align:left; }
+.flywp .tab_mn .c2 { width:170px; }
+.flywp .tab_mn .c3 { width:150px; }
+.flywp .tab_mn .c4 { width:160px; }
+.flywp .tab_mn .c5 { width:160px; }
+.flywp .tab_mn .c6 { width:170px; }
+.flywp .tab_mn td.c3 { text-align: left; }
+.flywp .tab_mn td.c3_c { text-align: left; }
+.flywp .tab_mn td.c1 { text-align:center; }
+.flywp .tab_mn td.cm { text-align:left; width:710px; line-height:22px; padding:5px; }
+.flywp .ul_mn_col { width:100%; }
+.flywp .ul_mn_col li { float:left; display:block; }
+.flywp .ul_mn_col .mn_col1 { width:32%; }
+.flywp .ul_mn_col .mn_col2 { width:35%; }
+.flywp .ul_mn_col .mn_col3 { width:33%; }
+.flywp .tab_mn_sep .c3 { width:6px; }
+.flywp .tab_mn_sep .c4 { width:200px; }
+.flywp .tab_mn_sep .c5 { width:200px; }
+.flywp .tab_mn_sep .c6 { width:210px; }
+.flywp .tab_mn_sep .ul_mn_col .mn_col1 { width:2%; }
+.flywp .tab_mn_sep .ul_mn_col .mn_col2,
+.flywp .tab_mn_sep .ul_mn_col .mn_col3 { width:49%; }
+    /*乘机人信息*/
+.flywp .md_pasinfo { width:950px; margin:0px auto 15px auto; }
+.flywp .md_pasinfo .inner { padding:10px 15px 0px 15px; }
+.flywp .pay_pas_info { border-bottom:#ddd 1px solid; padding:10px 15px 6px 15px; }
+.flywp .pay_pas_info h2 { font-weight:700; font-size:12px; line-height:20px; margin-bottom:10px; }
+.flywp .pay_pas_info .tbl_thead,
+.flywp .md_pasinfo .inner .tbl_thead { zoom:1; position:relative; bottom:-1px; z-index:2; }
+.flywp .tbl_pasinfo { table-layout:fixed; width:100%; line-height:24px; }
+.flywp .tbl_pasinfo th { line-height:24px; height:24px; background:#f4fbfc; text-align:left; font-weight:700; }
+.flywp .tbl_pasinfo td { text-align:left; word-wrap: break-word; word-break:break-all; padding:5px 0px 7px 0px; background:url(http://source.qunar.com/tts/tts/images/demo/dline_bottom.jpg) repeat-x left top; vertical-align:middle; }
+.flywp .tbl_pasinfo .ft1 { padding-left:15px; width:97px; }
+.flywp .tbl_pasinfo .ft2 { width:72px; }
+.flywp .tbl_pasinfo .ft3 { width:238px; }
+.flywp .tbl_pasinfo .ft4 { width:84px; text-align:center; }
+.flywp .tbl_pasinfo .ft5 { width:70px; }
+.flywp .tbl_pasinfo .ft6 { width:100px; }
+.flywp .tbl_pasinfo .ft7 { width:81px; text-align:center; }
+.flywp .tbl_pasinfo .ft8 { width:70px; text-align:center; }
+.flywp .tbl_pasinfo .ft9 { width:98px; text-align:center; }
+.flywp .tbl_pasinfo .ft10 { padding-left:17px; width:108px; }
+.flywp .tbl_pasinfo .ft11 { width:74px; }
+.flywp .tbl_pasinfo .ft12 { width:312px; padding-left:24px; }
+.flywp .tbl_pasinfo .ft13 { width:385px; }
+.flywp .tbl_pasinfo td p { padding-right:5px; }
+.flywp .tbl_pasinfo .ft9 p { padding-right:0px; }
+.flywp .tbl_pasinfo th.ft1,
+.flywp .tbl_pasinfo th.ft3,
+.flywp .tbl_pasinfo th.ft5,
+.flywp .tbl_pasinfo th.ft6,
+.flywp .tbl_pasinfo th.ft10,
+.flywp .tbl_pasinfo th.ft12 { text-align:left; }
+.flywp .tbl_pasinfo td.ft8,
+.flywp .tbl_pasinfo td.ft7,
+.flywp .tbl_pasinfo td.ft6,
+.flywp .tbl_pasinfo td.ft5,
+.flywp .tbl_pasinfo td.ft4 { font-family:Arial, Helvetica, sans-serif; }
+.flywp .tbl_pasinfo td.ft9 { font-family:Arial, Helvetica, sans-serif; font-weight:700; }
+.flywp .tbl_pasinfo th.ft13,
+.flywp .tbl_pasinfo th.ft2 { text-align:left; }
+.flywp .tbl_pasinfo td.ft10,
+.flywp .tbl_pasinfo td.ft11,
+.flywp .tbl_pasinfo td.ft12,
+.flywp .tbl_pasinfo td.ft13 { background:none; }
+.flywp .md_pasinfo .inner .safe_tip { margin:10px 15px 0px 15px; display:inline-block; *display:inline;
+    *zoom:1;
+    padding:2px 8px 5px 13px; padding:3px 8px 4px 13px \0; *padding:4px 8px 3px 13px;
+    _padding:3px 8px 4px 13px; line-height:18px; }
+    /*联系人信息*/
+.flywp .mdcontact_info { width:950px; margin:0px auto 15px auto; }
+.flywp .mdcontact_info .inner { padding:10px 15px 0px 15px; }
+.flywp .contactshow_info { border-bottom:#ddd 1px solid; padding:10px 15px 8px 15px; }
+.flywp .contactshow_info h2 { font-weight:700; font-size:12px; line-height:20px; margin-bottom:4px; }
+.flywp .contactshow_info ul,
+.flywp .mdcontact_info ul { zoom:1; padding:0px 15px; }
+.flywp .contactshow_info ul:after,
+.flywp .mdcontact_info ul:after { clear:both; display:block; height:0; visibility:hidden; content:"\20"; }
+.flywp .contactshow_info ul li,
+.flywp .mdcontact_info ul li { line-height:24px; float:left; }
+.flywp .contactshow_info ul .ct1 { width:171px; }
+.flywp .contactshow_info ul .ct2 { width:262px; }
+.flywp .contactshow_info ul .ct3 { width:322px; }
+.flywp .mdcontact_info ul .ct1 { width:208px; }
+.flywp .mdcontact_info ul .ct2 { width:312px; }
+.flywp .mdcontact_info ul .ct3 { width:322px; }
+    /*报销信息*/
+.flywp .mdreimbur_info { width:950px; margin:0px auto 15px auto; }
+.flywp .mdreimbur_info .inner { padding:8px 0px 0px 0px; }
+.flywp .reimburshow_info { padding:10px 15px 0px 15px; line-height:24px; white-space: normal; word-break: break-all;}
+.flywp .reimburshow_info h2 { font-weight:700; font-size:12px; line-height:20px; margin-bottom:4px; }
+.flywp .reimburshow_info ul,
+.flywp .mdreimbur_info ul { zoom:1; padding:0px 0px 0px 15px; }
+.flywp .reimburshow_info ul:after,
+.flywp .reimburshow_info ul.rembur_method:after,
+.flywp .mdreimbur_info ul:after,
+.flywp .mdreimbur_info ul.rembur_method:after { clear:both; display:block; height:0; visibility:hidden; content:"\20"; }
+.flywp .reimburshow_info ul li,
+.flywp .mdreimbur_info ul li { line-height:24px; float:left; zoom:1; }
+.flywp .reimburshow_info ul li.correct { background:url("http://source.qunar.com/tts/images/demo/topnav_v3.png") no-repeat scroll 0 -549px; padding-left: 15px; margin-right:40px; background-position:0 -551px\0;*background-position:0 -551px;_background-position:0 -550px;}
+.flywp .reimburshow_info ul .ct1 { width:171px; }
+.flywp .reimburshow_info ul .ct2 { width:262px; }
+.flywp .reimburshow_info ul .ct3 { width:471px; }
+</style>
+</head>
+
+<body>
+
+
+
+<div class="flywp">
+<!--订单信息star-->
+<div class="payorder_info">
+<div class="proces_step">
+    <div class="p_title">确认并支付</div>
+    <ul>
+        <li>选择航班<em class="visited"><s></s></em></li>
+        <li>填写订单<em class="prenode"><s></s></em></li>
+        <li>确认并支付<em class="current"><s></s></em></li>
+        <li>预订完成<em class="lastNode nexnode"></em></li>
+    </ul>
+</div>
+<!--页面title与订单流程end-->
+<div class="title_main">订单信息</div>
+    #if($errMsg)
+        $errMsg
+    #else
+    <div class="module_tipbg order_baseinfo">
+        <ul>
+            <li class="if1">订单号：<a href="${orderUrl}">$cashierOrder.orderNo</a></li>
+            <li class="if2">订单状态：<b>$cashierOrder.userOrderStatus</b></li>
+            <li class="if3">待支付金额：<span class="pr">&yen;<strong>$numberTool.format("#0", $cashierOrder.noPay)</strong></span>
+                #if($cashierOrder.hasVoucher) (含价值${cashierOrder.voucherValue}元${cashierOrder.voucherNameText}) #end
+            </li>
+        </ul>
+        <p class="waring_text">
+            #if($cashierOrder.showPriceOftenChangeWarning)
+                <span class="waring_line">航班价格变动频繁，请您仔细核对订单信息后及时付款以免座位被取消或价格发生变化。</span>
+            #end
+            <!--miao.qunar.com的订单 -->
+            #if($cashierOrder.showMiaoOrderWarning)
+                <span class="waring_line">如需要机票行程单，请持有效证件最晚于乘机日后7天内到航空公司柜台打印。如需要保险凭证，请联系百年人寿保险公司客服热线4006999100。</span>
+            #end
+            <!--okmiao.qunar.com的订单 -->
+            #if($cashierOrder.showMiaoshaOrderWarning)
+                <span class="waring_line">秒杀客票数量有限，售完后系统将限制您支付，你可以在下一时段参与秒杀。如您需要机票行程单，请前往天津长沙机场柜台或奥凯当地营业部自取，咨询电话：4000-668-866</span>
+            #end
+            #if($cashierOrder.showApplySuccessWarning)
+                <span class="waring_line">恭喜您，您的机票已经申请成功，请按照订单金额付款。此机票行程单票面价格可能会与实际支付价格不同。</span>
+            #end
+            #if($cashierOrder.showNeedApplyWarning)
+                <span class="waring_line">友情提示：您所选购的机票需要申请，申请成功后将短信通知您。请您在收到申请成功信息后再支付。此机票行程单票面价格可能会与实际支付价格不同。</span>
+            #end
+            #if($cashierOrder.showSPTicketWarning)
+                <span class="waring_line">友情提示：您所选购的是特价机票，此机票行程单票面价格可能会与实际支付价格不同。</span>
+            #end
+            #if($cashierOrder.show9CWarning)
+                <span class="waring_line">友情提示：您好，根据航空公司规定，本航班无法提供邮寄行程单，如有需要请致电购票代理商，此产品保证真实。</span>
+            #end
+            <span class="waring_line f_ord_no">为保障资金安全，请务必使用在线支付，切勿通过搜索引擎搜索或拨打来路不明的400电话进行银行ATM机转账。</span>
+            <span class="waring_line">如支付后出现代理商不出票、加价出票、机票无法使用，请您立即拨打去哪儿网客服电话10101234进行投诉，去哪儿网将执行"赔计划"保障100%出票。</span>
+        </p>
+    </div>
+    <!--航班信息star-->
+    <div class="payfl_info" id="j-flfive_info">
+        <h2>航班信息</h2>
+        <table border="0" cellpadding="0" class="tbl_ft">
+            #foreach($cashierFlight in $cashierFlightList)
+                <tr>
+                    <td class="ft1"><p>$cashierFlight.departureAndArrialCity</p></td>
+                    <td class="ft2"><p class="start"><em>${cashierFlight.departureDay}&nbsp;&nbsp;$cashierFlight.departureTime</em>$cashierFlight.departureAirport</p>
+                        <p class="end"><em>${cashierFlight.arrivalDay}&nbsp;&nbsp;$cashierFlight.arrivalTime</em>$cashierFlight.arrivalAirport</p></td>
+                    <td class="ft3">
+                        #if($cashierFlight.stopNum==0)
+                            <p>直飞</p>
+                        #else
+                            #if($cashierFlight.stopNum == 1 && $!cashierFlight.stopCity!="" && $!cashierFlight.stopAirPort!="" && $!cashierFlight.airPort!="")
+                                <p class='p_lacal_jt'>经停</p>
+                                <p class='p_lacal_jt'>$cashierFlight.stopCity</p>
+                                <p class='p_lacal_jt'>$cashierFlight.airPort</p>
+                            #else
+                                <p class='p_lacal_jt'>经停</p>
+                            #end
+                        #end
+                    </td>
+                    <td class="ft4">
+                        <p><img width="16" height="16" class="flogo" src="${cashierFlight.airlineCompanyShort}">$cashierFlight.airlineCompany</p>
+                        <p class="ft_code">$cashierFlight.flightNum
+                            #if($!cashierFlight.realFlightNum!="")
+                                (代码共享)
+                            #end
+                        </p>
+                    </td>
+                    <td class="ft5"></td>
+                </tr>
+            #end
+        </table>
+
+        <!-- 退改签 -->
+
+        <!-- 退改签详情 -->
+        <div class="b_tbl_mn">
+            <div class="e_mn_lnk" >
+                <a id="js_toggle_trigger" title="退改签费用标准" href="javascript:void(0)">退改签费用标准<span id="js_toggle_icon" class="col"></span></a>
+            </div>
+            <div class="b_mn_tbl" id="js_toggle_content" style="display:none;">
+                #if($tgqCharge.viewType == 1)
+                    <table class="tab_mn #if(!$tgqCharge.hasTime)tab_mn_sep#end">
+                        <tr>
+                            <th class="c1">&nbsp;</th>
+                            <th class="c2">类型</th>
+                            <th class="c3">#if($tgqCharge.hasTime)退改签时间点 #else &nbsp;#end</th>
+                            <th class="c4">退票扣费</th>
+                            <th class="c5">改期加收手续费</th>
+                            <th class="c6">签转</th>
+                        </tr>
+                        <tr>
+                            <td class="c1">&nbsp;</td>
+                            <td class="c2">成人票</td>
+                            <td colspan="3">
+                                #foreach($timeCharge in $tgqCharge.timePointCharges)
+                                    <ul class="ul_mn_col fix">
+                                        <li class="mn_col1">#if($tgqCharge.hasTime)$timeCharge.timeText #else &nbsp;#end</li>
+                                        <li class="mn_col2">#if($timeCharge.returnFee == -1) 只退机建和燃油 #else <span class="f_tohama"><i class="rmb">&yen;</i>$timeCharge.returnFee</span>/人#end</li>
+                                        <li class="mn_col3">#if($timeCharge.changeFee == -1) 不可改期 #else <span class="f_tohama"><i class="rmb">&yen;</i>$timeCharge.changeFee</span>/人#end</li>
+                                    </ul>
+                                #end
+                            </td>
+                            <td class="c6">$tgqCharge.signText</td>
+                        </tr>
+                        #if($cashierOrder.hasChild)
+                            <tr>
+                                <td class="c1">&nbsp;</td>
+                                <td class="c2">儿童</td>
+                                <td class="c3_c" colspan="4">$cashierOrder.childTGQRule</td>
+                            </tr>
+                        #end
+                    </table>
+                #else
+                    <table class="tab_mn">
+                        <tr><th class="c1"></th><th class="cm">&nbsp;</th></tr>
+                        <tr>
+                            <td class="c1">成人退改签规则</td><td class="cm">$tgqCharge.tgqText</td>
+                        </tr>
+                        #if($cashierOrder.hasChild)
+                            <tr>
+                                <td class="c1">儿童退改签规则</td>
+                                <td class="cm">$cashierOrder.childTGQRule</td>
+                            </tr>
+                        #end
+                    </table>
+                #end
+            </div>
+            #if($stringUtil.isNotEmpty($cashierOrder.specialRuleContent))
+                <div class="" id="js_bookingTips">
+                    <div class="module_tipbg">
+                        <div class="wrinner">
+                            <p class="waring_text fb">${cashierOrder.specialRuleContent}</p>
+                        </div>
+                    </div>
+                </div>
+            #end
+        </div>
+        <!--\退改签信息-->
+
+    </div>
+    <!--航班信息end-->
+    <!--乘机人信息star-->
+    <div class="pay_pas_info">
+        <h2>乘机人信息</h2>
+        <div class="tbl_thead">
+            <table border="0" cellpadding="0" class="tbl_pasinfo">
+                <tr>
+                    <th class="ft1">姓名</th>
+                    <th class="ft2">类型</th>
+                    <th class="ft3">证件号</th>
+                    <th class="ft4">舱位</th>
+                    <th class="ft5">票价</th>
+                    <th class="ft6">机建/燃油</th>
+                    <th class="ft7">保险费</th>
+                    <th class="ft8">快递</th>
+                    <th class="ft9">订单总额</th>
+                </tr>
+            </table>
+        </div>
+        <table border="0" cellpadding="0" class="tbl_pasinfo">
+            #set ($i=0)
+            #foreach($cashierPassenger in $cashierPassengerList)
+                #set($i=$i+1)
+                <tr>
+                    <td class="ft1"><p>$cashierPassenger.name</p></td>
+                    <td class="ft2"><p>$cashierPassenger.passengerType</p></td>
+                    <td class="ft3"><p>$cashierPassenger.card
+                        #if($cashierPassenger.cardType != "NI" && $!cashierPassenger.birthDay!="")
+                            <em>($cashierPassenger.sex $cashierPassenger.birthDay)</em></p>
+                        #end
+                    </td>
+                    <td class="ft4">
+                        <p>#if($cashierPassenger.childPriceType) $cashierOrder.ccbcn #else $cashierOrder.cbcn #end</p>
+                    </td>
+                    <td class="ft5"><p>&yen;$numberTool.format("#0",$cashierPassenger.price)</p></td>
+                    <td class="ft6">
+                        #if($cashierPassenger.childPriceType)
+                            <p>&yen;0/&yen;$cashierOrder.childFuelTax</p>
+                        #else
+                            <p>&yen;$cashierOrder.constructTax/&yen;$cashierOrder.fuelTax</p>
+                        #end
+                    </td>
+                    <td class="ft7"><p>&yen;${cashierOrder.bxPrice}/份 X ${cashierPassenger.bxCount}份</p></td>
+                    #if($i == 1)
+                        <td rowspan="$cashierOrder.passengerCount" class="ft8"><p>&yen;$cashierOrder.expressFee</p></td>
+                        <td rowspan="$cashierOrder.passengerCount" class="ft9"><p>&yen;$cashierOrder.allPrice</p></td>
+                    #end
+                </tr>
+            #end
+        </table>
+    </div>
+    <!--乘机人信息end-->
+
+    <!--联系人信息star-->
+    <div class="contactshow_info" id="j-contactshow_info">
+        <h2>联系人信息</h2>
+        <ul>
+            <li class="ct1">$cashierOrder.contact</li>
+            <li class="ct2">手机： $!cashierOrder.contactMob</li>
+            <li class="ct3">电子邮箱： $cashierOrder.contactEmail</li>
+        </ul>
+    </div>
+    <!--联系人信息end-->
+    <!--报销信息star-->
+        #if($cashierOrder.xcd || $cashierOrder.express)
+        <div class="reimburshow_info" id="j-reimburshow_info">
+            <h2>报销信息</h2>
+            <ul class="rembur_method">
+                #if($cashierOrder.xcdType == 1)
+                    <li class="correct">行程单</li>
+                #elseif($cashierOrder.xcdType == 2)
+                    <li class="correct">发票</li>
+                #end
+                #if($cashierOrder.express)
+                    <li class="correct">保险发票</li>
+                #end
+            </ul>
+            <ul><p class="kd_method">递送方式：
+                #if($cashierOrder.xcdMethod == 2)快递<span class="grey">（<span class="xred">航班起飞后一周内寄出</span>）</span>
+                #else $cashierOrder.bxDescription
+                #end
+            </p></ul>
+            #if($cashierOrder.xcdMethod == 2)
+                <ul>
+                    <li class="ct1">收件人：$cashierOrder.sjr </li>
+                    <li class="ct2">手机：$cashierOrder.contactTel</li>
+                    <li class="ct3"><span class="tt">地址：</span><span class="adre_detail">$cashierOrder.address</span></li>
+                </ul>
+            #end
+        </div>
+        #end
+    <!--报销信息end-->
+    #end
+</div>
+</div>
+
+
+</body>
+<script>
+    (function(){
+        var trigger = document.getElementById('js_toggle_trigger');
+        var icon = document.getElementById('js_toggle_icon');
+        var content = document.getElementById('js_toggle_content');
+
+        trigger.onclick = function(){
+
+            var isClose = content.style.display === 'none';
+            content.style.display = isClose ? '' : 'none';
+            icon.className = isClose ? 'icon_exp' : 'col';
+        }
+    })();
+
+</script>
+</html>
