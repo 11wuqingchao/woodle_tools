@@ -9,20 +9,47 @@
 
   <name>woodle_tools</name>
 
+  <modules>
+      <module>velocity_debug_tool</module>
+      <module>maven_bomcheck_tool</module>
+  </modules>
+
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
   </properties>
 
+   <dependencyManagement>
+       <dependencies>
+           <dependency>
+               <groupId>org.jboss.netty</groupId>
+               <artifactId>netty</artifactId>
+               <version>3.2.5.Final</version>
+           </dependency>
+           <dependency>
+               <groupId>org.apache.velocity</groupId>
+               <artifactId>velocity</artifactId>
+               <version>1.7</version>
+           </dependency>
+           <dependency>
+               <groupId>org.apache.velocity</groupId>
+               <artifactId>velocity-tools</artifactId>
+               <version>2.0</version>
+           </dependency>
+           <dependency>
+               <groupId>org.codehaus.jackson</groupId>
+               <artifactId>jackson-mapper-asl</artifactId>
+               <version>1.9.6</version>
+           </dependency>
+           <dependency>
+               <groupId>com.google.guava</groupId>
+               <artifactId>guava</artifactId>
+               <version>14.0.1</version>
+           </dependency>
+       </dependencies>
+   </dependencyManagement>
+
   <dependencies>
-    <dependency>
-      <groupId>junit</groupId>
-      <artifactId>junit</artifactId>
-      <version>3.8.1</version>
-      <scope>test</scope>
-    </dependency>
+
   </dependencies>
-  <modules>
-    <module>velocity_debug_tool</module>
-    <module>maven_bomcheck_tool</module>
-  </modules>
+
 </project>
