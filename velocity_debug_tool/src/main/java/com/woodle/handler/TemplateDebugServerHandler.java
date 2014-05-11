@@ -24,11 +24,11 @@ import org.jboss.netty.util.CharsetUtil;
  * User: wuqingchao
  * Time: 14-5-11 下午9:59
  */
-public class AdminServerHandler extends SimpleChannelUpstreamHandler{
+public class TemplateDebugServerHandler extends SimpleChannelUpstreamHandler{
 
     private RenderingService renderingService;
 
-    public AdminServerHandler(){
+    public TemplateDebugServerHandler(){
         this.renderingService = new RenderingService();
     }
 
@@ -38,7 +38,7 @@ public class AdminServerHandler extends SimpleChannelUpstreamHandler{
         String uri = request.getUri();
         System.out.println("request uri:"+uri);
         HttpResponse response = new DefaultHttpResponse(HTTP_1_1, OK);
-        ChannelBuffer buffer=new DynamicChannelBuffer(2048);
+        ChannelBuffer buffer= new DynamicChannelBuffer(2048);
         String view = renderingService.Rendering(uri);
         buffer.writeBytes(view.getBytes("UTF-8"));
         response.setContent(buffer);

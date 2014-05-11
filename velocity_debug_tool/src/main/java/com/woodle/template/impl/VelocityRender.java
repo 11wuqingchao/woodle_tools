@@ -1,6 +1,6 @@
 package com.woodle.template.impl;
 
-import com.woodle.common.ErrorTip;
+import com.woodle.common.CommonConstants;
 import com.woodle.template.ITemplateRender;
 import com.woodle.utils.PathUtil;
 import org.apache.velocity.Template;
@@ -40,7 +40,7 @@ public class VelocityRender implements ITemplateRender<Map<String, Object>> {
     @Override
     public String renderTemplate(String templateFile, Map<String, Object> paramMap) {
         Velocity.init(p);
-        String ret = null;
+        String ret;
 
         try {
             for (String s : paramMap.keySet()) {
@@ -55,16 +55,16 @@ public class VelocityRender implements ITemplateRender<Map<String, Object>> {
 
         } catch(ResourceNotFoundException ex) {
             System.out.println("couldn't find the template!");
-            ret  = String.format(ErrorTip.VM_NOT_FOUND_FORMAT, templateFile);
+            ret  = String.format(CommonConstants.VM_NOT_FOUND_FORMAT, templateFile);
         } catch( ParseErrorException pee )  {
             System.out.println("syntax error : problem parsing the template!");
-            ret  = String.format(ErrorTip.PARSE_VM_ERROR_FORMAT, templateFile);
+            ret  = String.format(CommonConstants.PARSE_VM_ERROR_FORMAT, templateFile);
         }  catch(MethodInvocationException mie )  {
             System.out.println("a method on a referenced object in the context could not invoked!");
-            ret  = String.format(ErrorTip.INVOKE_VM_METHOD_ERROR_FORMAT, templateFile);
+            ret  = String.format(CommonConstants.INVOKE_VM_METHOD_ERROR_FORMAT, templateFile);
         }  catch (IOException e) {
             System.out.println("output vm content error!");
-            ret  = String.format(ErrorTip.VM_OUTPUT_ERROR, templateFile);
+            ret  = CommonConstants.VM_OUTPUT_ERROR;
         }
         return ret;
     }

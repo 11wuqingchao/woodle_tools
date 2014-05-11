@@ -3,7 +3,7 @@ package com.woodle.service;
 import com.google.common.base.Charsets;
 import com.google.common.collect.Lists;
 import com.google.common.io.Files;
-import com.woodle.common.ErrorTip;
+import com.woodle.common.CommonConstants;
 import com.woodle.data.IDataFormater;
 import com.woodle.data.impl.JSONDataFormater;
 import com.woodle.template.ITemplateRender;
@@ -21,8 +21,7 @@ import java.util.Map;
  * Time: 14-5-11 下午10:07
  */
 public class RenderingService {
-    private static final String DATA_SURFIX = ".json";
-    private static final String TEMPLATE_SURFIX = ".vm";
+
 
     private IDataFormater<Map<String, Object>> dataFormater;
     private ITemplateRender<Map<String, Object>> templateRender;
@@ -39,11 +38,10 @@ public class RenderingService {
             return "";
         }
 
-        String renderResult = null;
-        String dataFile = new StringBuilder(uri).append(DATA_SURFIX).toString();
-        String templateFile = new StringBuilder(uri).append(TEMPLATE_SURFIX).toString();
+        String renderResult;
 
-//		dataFile = "C:\\Users\\qingchao.wu\\workspace\\velocitytool\\src\\main\\resources\\"+dataFile;
+        String dataFile = new StringBuilder(uri).append(CommonConstants.JSON_DATA_SURFIX).toString();
+        String templateFile = new StringBuilder(uri).append(CommonConstants.VM_TEMPLATE_SURFIX).toString();
         String dataFilePath = new StringBuilder(PathUtil.ROOT_DIR).append(dataFile).toString();
 
         // 读取数据
@@ -53,7 +51,7 @@ public class RenderingService {
             dataList = Files.readLines(file, Charsets.UTF_8);
         } catch(Exception ex) {
             System.out.println("read data file excepption: "+ex.getMessage());
-            renderResult = String.format(ErrorTip.DATA_NOT_FOUND_FORMAT, dataFile);
+            renderResult = String.format(CommonConstants.DATA_NOT_FOUND_FORMAT, dataFile);
             return renderResult;
         }
         // 格式化数据
