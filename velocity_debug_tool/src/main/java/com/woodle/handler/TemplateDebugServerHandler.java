@@ -7,7 +7,7 @@ import static org.jboss.netty.handler.codec.http.HttpResponseStatus.INTERNAL_SER
 import static org.jboss.netty.handler.codec.http.HttpResponseStatus.OK;
 import static org.jboss.netty.handler.codec.http.HttpVersion.HTTP_1_1;
 
-import com.woodle.service.RenderingService;
+import com.woodle.service.RenderService;
 import org.jboss.netty.buffer.ChannelBuffer;
 import org.jboss.netty.buffer.ChannelBuffers;
 import org.jboss.netty.buffer.DynamicChannelBuffer;
@@ -26,10 +26,10 @@ import org.jboss.netty.util.CharsetUtil;
  */
 public class TemplateDebugServerHandler extends SimpleChannelUpstreamHandler{
 
-    private RenderingService renderingService;
+    private RenderService renderingService;
 
     public TemplateDebugServerHandler(){
-        this.renderingService = new RenderingService();
+        this.renderingService = new RenderService();
     }
 
     @Override

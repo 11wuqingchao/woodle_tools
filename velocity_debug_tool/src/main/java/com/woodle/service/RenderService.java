@@ -1,5 +1,11 @@
 package com.woodle.service;
 
+/**
+ * Created with IntelliJ IDEA.
+ * User: wuqingchao
+ * Time: 14-5-12 上午12:09
+ */
+
 import com.google.common.base.Charsets;
 import com.google.common.collect.Lists;
 import com.google.common.io.Files;
@@ -20,13 +26,13 @@ import java.util.Map;
  * User: wuqingchao
  * Time: 14-5-11 下午10:07
  */
-public class RenderingService {
+public class RenderService {
 
 
     private IDataFormater<Map<String, Object>> dataFormater;
     private ITemplateRender<Map<String, Object>> templateRender;
 
-    public RenderingService(){
+    public RenderService(){
         dataFormater = new JSONDataFormater();
         templateRender = new VelocityRender();
     }
