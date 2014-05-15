@@ -12,6 +12,9 @@ public class CommonConstants {
     /* 网页URL根目录地址 */
     public static final String URL_ROOT_DIR = "/";
 
+    /* 无效请求 */
+    public static final String INVALID_URI = "favicon.ico";
+
     /* json文件的后缀名 */
     public static final String JSON_DATA_SURFIX = ".json";
 
@@ -23,6 +26,7 @@ public class CommonConstants {
 
     /* freemarker模板后缀名*/
     public static final String FM_TEMPLATE_SURFIX = ".fm";
+
 
     public static final String VM_NOT_FOUND_FORMAT = "错误，找不到模板文件！请确认模板文件%s是否存在（模板文件放在与jar包相同路径下）！";
 

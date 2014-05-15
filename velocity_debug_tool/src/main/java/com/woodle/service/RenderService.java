@@ -36,7 +36,7 @@ public class RenderService {
 
     public  String Rendering(String uri) {
         uri = StringUtils.remove(uri, CommonConstants.URL_ROOT_DIR);
-        if (StringUtils.isEmpty(uri) || StringUtils.equals(uri, "favicon.ico")) {
+        if (StringUtils.isEmpty(uri) || StringUtils.equals(uri, CommonConstants.INVALID_URI)) {
             System.out.println("invalid request");
             return "";
         }
@@ -60,7 +60,7 @@ public class RenderService {
         try {
             dataList = Files.readLines(file, Charsets.UTF_8);
         } catch(Exception ex) {
-            System.out.println("read data file excepption: "+ex.getMessage());
+            System.out.println("read data file excepption: " + ex.getMessage());
             renderResult = String.format(CommonConstants.DATA_NOT_FOUND_FORMAT, jsonDataFile);
             return renderResult;
         }
