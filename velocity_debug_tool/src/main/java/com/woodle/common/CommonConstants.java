@@ -9,8 +9,13 @@ public class CommonConstants {
 
     public static final int PORT_LISTENED = 12321;
 
+    /* 网页URL根目录地址 */
+    public static final String URL_ROOT_DIR = "/";
+
+    /* json文件的后缀名 */
     public static final String JSON_DATA_SURFIX = ".json";
 
+    /* velocity模板文件的后缀名 */
     public static final String VM_TEMPLATE_SURFIX = ".vm";
 
     public static final String VM_NOT_FOUND_FORMAT = "错误，找不到模板文件！请确认模板文件%s是否存在（模板文件放在与jar包相同路径下）！";

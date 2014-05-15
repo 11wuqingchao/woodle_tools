@@ -38,7 +38,7 @@ public class RenderService {
     }
 
     public  String Rendering(String uri) {
-        uri = StringUtils.remove(uri, "/");
+        uri = StringUtils.remove(uri, CommonConstants.URL_ROOT_DIR);
         if (StringUtils.isEmpty(uri) || StringUtils.equals(uri, "favicon.ico")) {
             System.out.println("invalid request");
             return "";

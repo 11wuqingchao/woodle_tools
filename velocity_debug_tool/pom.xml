@@ -48,7 +48,7 @@
                 <configuration>
                     <archive>
                         <manifest>
-                            <mainClass>com.qunar.flight.tts.velocitytool.server.AdminServer</mainClass>
+                            <mainClass>com.woodle.server.TemplateDebugServer</mainClass>
                         </manifest>
                     </archive>
                     <descriptorRefs>
