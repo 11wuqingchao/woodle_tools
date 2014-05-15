@@ -8,4 +8,6 @@ package com.woodle.template;
 public interface ITemplateRender <T> {
 
     public String renderTemplate(String templateFile, T params);
+
+    public ITemplateRender<T> switchTemplateRender(String vmTemplateFile, String fmTemplateFile);
 }

@@ -15,8 +15,14 @@ public class CommonConstants {
     /* json文件的后缀名 */
     public static final String JSON_DATA_SURFIX = ".json";
 
+    /* xml文件的后缀名 */
+    public static final String XML_DATA_SURFIX = ".xml";
+
     /* velocity模板文件的后缀名 */
     public static final String VM_TEMPLATE_SURFIX = ".vm";
+
+    /* freemarker模板后缀名*/
+    public static final String FM_TEMPLATE_SURFIX = ".fm";
 
     public static final String VM_NOT_FOUND_FORMAT = "错误，找不到模板文件！请确认模板文件%s是否存在（模板文件放在与jar包相同路径下）！";
 

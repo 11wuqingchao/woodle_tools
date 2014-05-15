@@ -11,9 +11,7 @@ import com.google.common.collect.Lists;
 import com.google.common.io.Files;
 import com.woodle.common.CommonConstants;
 import com.woodle.data.IDataFormater;
-import com.woodle.data.impl.JSONDataFormater;
 import com.woodle.template.ITemplateRender;
-import com.woodle.template.impl.VelocityRender;
 import com.woodle.utils.PathUtil;
 import org.apache.commons.lang.StringUtils;
 
@@ -33,8 +31,7 @@ public class RenderService {
     private ITemplateRender<Map<String, Object>> templateRender;
 
     public RenderService(){
-        dataFormater = new JSONDataFormater();
-        templateRender = new VelocityRender();
+
     }
 
     public  String Rendering(String uri) {
@@ -46,24 +43,34 @@ public class RenderService {
 
         String renderResult;
 
-        String dataFile = new StringBuilder(uri).append(CommonConstants.JSON_DATA_SURFIX).toString();
-        String templateFile = new StringBuilder(uri).append(CommonConstants.VM_TEMPLATE_SURFIX).toString();
-        String dataFilePath = new StringBuilder(PathUtil.ROOT_DIR).append(dataFile).toString();
+        String jsonDataFile = uri + CommonConstants.JSON_DATA_SURFIX;
+        String vmTemplateFile = uri + CommonConstants.VM_TEMPLATE_SURFIX;
+        String jonsDataFilePath = PathUtil.ROOT_DIR + jsonDataFile;
+
+        String xmlDataFile = uri + CommonConstants.XML_DATA_SURFIX;
+        String xmlDataFilePath = PathUtil.ROOT_DIR + xmlDataFile;
+        String fmTemplateFile = uri + CommonConstants.FM_TEMPLATE_SURFIX;
+
+        templateRender = templateRender.switchTemplateRender(vmTemplateFile, fmTemplateFile);
+        dataFormater = dataFormater.switchDataFormater(jonsDataFilePath, xmlDataFilePath);
 
         // 读取数据
-        File file = new File(dataFilePath);
+        File file = new File(jonsDataFilePath);
         List<String> dataList = Lists.newArrayList();
         try {
             dataList = Files.readLines(file, Charsets.UTF_8);
         } catch(Exception ex) {
             System.out.println("read data file excepption: "+ex.getMessage());
-            renderResult = String.format(CommonConstants.DATA_NOT_FOUND_FORMAT, dataFile);
+            renderResult = String.format(CommonConstants.DATA_NOT_FOUND_FORMAT, jsonDataFile);
             return renderResult;
         }
         // 格式化数据
         Map<String, Object> dataMap = dataFormater.formatData(dataList);
         // 数据渲染模板
-        renderResult = templateRender.renderTemplate(templateFile, dataMap);
+        renderResult = templateRender.renderTemplate(vmTemplateFile, dataMap);
         return  renderResult;
     }
+
+
+
 }

@@ -1,6 +1,7 @@
 package com.woodle.template.impl;
 
 import com.woodle.common.CommonConstants;
+import com.woodle.template.AbstractTemplateRender;
 import com.woodle.template.ITemplateRender;
 import com.woodle.utils.PathUtil;
 import org.apache.velocity.Template;
@@ -11,6 +12,7 @@ import org.apache.velocity.exception.ParseErrorException;
 import org.apache.velocity.exception.ResourceNotFoundException;
 import org.apache.velocity.tools.ToolManager;
 
+import java.io.File;
 import java.io.IOException;
 import java.io.StringWriter;
 import java.util.Map;
@@ -21,7 +23,7 @@ import java.util.Properties;
  * User: wuqingchao
  * Time: 14-5-11 下午10:12
  */
-public class VelocityRender implements ITemplateRender<Map<String, Object>> {
+public class VelocityRender extends AbstractTemplateRender {
     private static Properties p = new Properties();
 
     private static VelocityContext context;
@@ -68,4 +70,8 @@ public class VelocityRender implements ITemplateRender<Map<String, Object>> {
         }
         return ret;
     }
+
+
+
+
 }

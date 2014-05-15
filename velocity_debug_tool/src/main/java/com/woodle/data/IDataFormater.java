@@ -10,4 +10,6 @@ import java.util.List;
 public interface IDataFormater <T>{
 
     public T formatData(List<String> source);
+
+    public IDataFormater<T> switchDataFormater(String jsonDataFile, String xmlDataFile) ;
 }
