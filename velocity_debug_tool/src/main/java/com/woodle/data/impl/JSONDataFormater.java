@@ -2,10 +2,12 @@ package com.woodle.data.impl;
 
 import com.google.common.base.Joiner;
 import com.google.common.collect.Maps;
+import com.woodle.data.AbstractDataFormater;
 import com.woodle.data.IDataFormater;
 import org.codehaus.jackson.JsonParser;
 import org.codehaus.jackson.map.ObjectMapper;
 
+import java.io.File;
 import java.util.List;
 import java.util.Map;
 
@@ -14,7 +16,7 @@ import java.util.Map;
  * User: wuqingchao
  * Time: 14-5-11 下午10:22
  */
-public class JSONDataFormater implements IDataFormater<Map<String, Object>> {
+public class JSONDataFormater extends AbstractDataFormater {
 
     @SuppressWarnings("unchecked")
     @Override
@@ -33,5 +35,7 @@ public class JSONDataFormater implements IDataFormater<Map<String, Object>> {
 
         return map;
     }
+
+
 
 }

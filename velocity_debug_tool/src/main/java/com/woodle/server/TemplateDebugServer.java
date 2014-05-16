@@ -45,11 +45,9 @@ public class TemplateDebugServer {
 
     private static class ServerPipelineFactory implements ChannelPipelineFactory {
         public ChannelPipeline getPipeline() throws Exception {
-            // Create a default pipeline implementation.
             ChannelPipeline pipeline = Channels.pipeline();
             pipeline.addLast("decoder", new HttpRequestDecoder());
             pipeline.addLast("encoder", new HttpResponseEncoder());
-            // http处理handler
             pipeline.addLast("handler", new TemplateDebugServerHandler());
             return pipeline;
         }
