@@ -20,7 +20,7 @@ import java.util.List;
 import java.util.Map;
 
 /**
- * Created with IntelliJ IDEA.
+ *
  * User: wuqingchao
  * Time: 14-5-11 下午10:07
  */

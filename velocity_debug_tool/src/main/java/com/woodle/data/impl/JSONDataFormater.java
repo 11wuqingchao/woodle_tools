@@ -12,7 +12,7 @@ import java.util.List;
 import java.util.Map;
 
 /**
- * Created with IntelliJ IDEA.
+ * json格式数据处理类
  * User: wuqingchao
  * Time: 14-5-11 下午10:22
  */

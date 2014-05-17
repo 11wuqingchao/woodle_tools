@@ -3,7 +3,7 @@ package com.woodle.data;
 import java.util.List;
 
 /**
- * Created with IntelliJ IDEA.
+ * 数据处理接口
  * User: wuqingchao
  * Time: 14-5-11 下午10:21
  */

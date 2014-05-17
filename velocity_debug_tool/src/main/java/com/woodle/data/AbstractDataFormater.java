@@ -6,7 +6,7 @@ import java.io.File;
 import java.util.Map;
 
 /**
- * Created with IntelliJ IDEA.
+ * 数据处理类
  * User: wuqingchao
  * Time: 14-5-15 下午11:24
  */
