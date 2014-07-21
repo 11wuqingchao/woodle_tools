@@ -1,7 +1,7 @@
 package com.woodle.common;
 
 /**
- * Created with IntelliJ IDEA.
+ * 常数
  * User: wuqingchao
  * Time: 14-5-11 下午10:55
  */

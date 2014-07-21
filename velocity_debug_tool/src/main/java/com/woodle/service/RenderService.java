@@ -20,15 +20,15 @@ import java.util.List;
 import java.util.Map;
 
 /**
- * Created with IntelliJ IDEA.
+ *
  * User: wuqingchao
  * Time: 14-5-11 下午10:07
  */
 public class RenderService {
 
 
-    private IDataFormater<Map<String, Object>> dataFormater;
-    private ITemplateRender<Map<String, Object>> templateRender;
+    private IDataFormater<Map<String, Object>> dataFormater = null;
+    private ITemplateRender<Map<String, Object>> templateRender = null;
 
     public RenderService(){
 

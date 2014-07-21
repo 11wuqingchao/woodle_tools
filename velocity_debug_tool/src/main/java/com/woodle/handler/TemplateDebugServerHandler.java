@@ -18,7 +18,7 @@ import org.jboss.netty.handler.codec.http.*;
 import org.jboss.netty.util.CharsetUtil;
 
 /**
- * Created with IntelliJ IDEA.
+ *
  * User: wuqingchao
  * Time: 14-5-11 下午9:59
  */

@@ -19,7 +19,7 @@ import java.util.Map;
 import java.util.Properties;
 
 /**
- * Created with IntelliJ IDEA.
+ * velocity模板渲染
  * User: wuqingchao
  * Time: 14-5-11 下午10:12
  */

@@ -15,7 +15,7 @@ import org.jboss.netty.handler.codec.http.HttpResponseEncoder;
 
 
 /**
- * Created with IntelliJ IDEA.
+ *
  * User: wuqingchao
  * Time: 14-5-10 下午7:07
  */
