@@ -27,8 +27,8 @@ import java.util.Map;
 public class RenderService {
 
 
-    private IDataFormater<Map<String, Object>> dataFormater;
-    private ITemplateRender<Map<String, Object>> templateRender;
+    private IDataFormater<Map<String, Object>> dataFormater = null;
+    private ITemplateRender<Map<String, Object>> templateRender = null;
 
     public RenderService(){
 
