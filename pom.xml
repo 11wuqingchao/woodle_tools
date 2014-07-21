@@ -12,6 +12,7 @@
   <modules>
       <module>velocity_debug_tool</module>
       <module>maven_bomcheck_tool</module>
+    <module>dbshema_diff_tool</module>
   </modules>
 
   <properties>
