@@ -1,4 +1,4 @@
-package com.woodle.dev.model;
+package com.woodle.model;
 
 import java.util.List;
 import java.util.Set;

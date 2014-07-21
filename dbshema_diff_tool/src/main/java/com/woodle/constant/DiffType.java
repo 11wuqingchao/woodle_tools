@@ -1,4 +1,4 @@
-package com.woodle.dev.constant;
+package com.woodle.constant;
 
 public enum DiffType {
 	ADD(1, "新增"), 

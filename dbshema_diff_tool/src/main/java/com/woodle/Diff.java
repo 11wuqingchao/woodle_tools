@@ -1,4 +1,4 @@
-package com.woodle.dev;
+package com.woodle;
 
 import com.woodle.dev.model.DB;
 import com.woodle.dev.model.DiffedDB;

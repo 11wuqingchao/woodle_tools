@@ -1,4 +1,4 @@
-package com.woodle.dev.constant;
+package com.woodle.constant;
 
 public class SQLRegex {
 	

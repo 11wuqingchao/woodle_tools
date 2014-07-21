@@ -1,4 +1,4 @@
-package com.woodle.dev.service;
+package com.woodle.service;
 
 import com.woodle.dev.model.DB;
 

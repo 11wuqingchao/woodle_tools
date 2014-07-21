@@ -1,4 +1,4 @@
-package com.woodle.dev.util;
+package com.woodle.util;
 
 import org.apache.commons.lang.StringUtils;
 
